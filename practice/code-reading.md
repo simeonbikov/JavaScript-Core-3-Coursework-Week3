@@ -16,6 +16,8 @@ Take a look at the following code:
 
 Explain why line 4 and line 6 output different numbers.
 
+- x in line 1 is a global variable and x in line 4 is a local variable in f1 function.
+
 ## Question 2
 
 Take a look at the following code:
@@ -34,6 +36,8 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+- x is a global variable, so log out x will be 10. And y is a local variable and in global scope y will be undefined.
 
 ## Question 3
 
@@ -62,3 +66,7 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+- 9 and 10.
+x is a constant variable so can't be changed.
+y is a constant object, so we can change the values.

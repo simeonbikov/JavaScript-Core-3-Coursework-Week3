@@ -70,3 +70,23 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+const makeListGryffindorPeople = (school) => {
+  school.forEach((person) => {
+    const { firstName, lastName, house } = person;
+    if (house === "Gryffindor")
+      console.log(`${firstName} ${lastName}`);
+  });
+}
+
+const makeListOfTeachersWithPets = (school) => {
+  school.forEach((person) => {
+    const { firstName, lastName, pet, occupation } = person;
+    if (occupation === "Teacher" && pet !== null)
+      console.log(`${firstName} ${lastName}`);
+    });
+};
+
+makeListGryffindorPeople(hogwarts);
+
+makeListOfTeachersWithPets(hogwarts);
